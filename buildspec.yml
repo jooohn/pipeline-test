@@ -3,4 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - ls
+      - echo 'START'
+      - env
+      - echo $CODEBUILD_SRC_DIR
+      - ls $CODEBUILD_SRC_DIR
+      - echo $CODEBUILD_SRC_DIR_SourceArtifact
+      - ls $CODEBUILD_SRC_DIR_SourceArtifact
